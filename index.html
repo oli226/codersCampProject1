@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="description" content="My portfolio">
     <meta name="keywords" content="portfolio, project">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>My portfolio</title>
 </head>
 
 <body>
-    <header>
-        <img src="https://img.icons8.com/dotty/80/000000/webpage.png" alt="Logo strony">
-        <h3>Alex's portfolio</h3>
-        <nav>
-            <ul>
-                <li><a href="#welcome">About Me </a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr> <!-- remove it later-->
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #92e0f66e;">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="https://img.icons8.com/dotty/80/000000/webpage.png" alt="Webpage logo">
+                <h3>Alex's portfolio</h3>
+            </div>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#welcome">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="welcome" id="welcome">
         <div class="overlayBackground">
-            <img src="img/background1.jpg" alt="Tło sekcji Welcome">
+            <img src="img/background1.jpg" alt="Welcome section background">
             <h1 class="link">Welcome to my Home Page!</h1>
         </div>
     </div>
@@ -33,11 +44,11 @@
     <div class="about">
         <p>
             <ul>
-            <li>Full name: Alex M</li>
-            <li>Age: 24</li>
-            <li>Mobile: 123-999-745</li>
-            <li>E-mail: aleks@mail.com</li>
-        </ul>
+                <li>Full name: Alex M</li>
+                <li>Age: 24</li>
+                <li>Mobile: 123-999-745</li>
+                <li>E-mail: aleks@mail.com</li>
+            </ul>
         </p>
         <p>
             Chemist. Student. Programmer-wanabe. Also huge cat lover.
@@ -64,10 +75,19 @@
         <input type="button" value="Send!">
     </div>
     <hr> <!-- remove it later-->
-    <footer>
+    <footer class="page-footer navbar-light" style="background-color: #92e0f66e;"">
         <a href="https://icons8.com/icon/78316/webpage">Webpage icon by Icons8</a>
-        Image by <a href="https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1985856">rawpixel</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1985856">Pixabay</a>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
