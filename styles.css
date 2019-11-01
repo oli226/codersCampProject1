@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 body {
   font-family: Roboto, Helvetica, sans-serif;
+  background-color: #92e0f694;
+  /*test*/
 }
 
 .contact {
@@ -19,8 +21,11 @@ body {
 .welcome h1 {
   position: absolute;
   top: 200px;
-  width: 100%;
   color: #fff;
   text-align: center;
+}
+
+.about {
+  margin: 40px 0px 40px;
 }
 /*# sourceMappingURL=styles.css.map */
