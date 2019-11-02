@@ -5,27 +5,48 @@ body {
   /*test*/
 }
 
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .welcome img {
   position: relative;
   width: 100%;
 }
 
-.welcome h1 {
+.welcome .centered-text {
   position: absolute;
   top: 200px;
-  color: #fff;
+  color: white;
   text-align: center;
+  width: 100%;
 }
 
 .about {
-  margin: 40px 0px 40px;
+  margin: 25px 0px;
+}
+
+.about img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.skills img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills p {
+  text-align: center;
+}
+
+.contact {
+  /*display: flex;
+    flex-wrap: wrap;*/
+}
+
+footer p {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
