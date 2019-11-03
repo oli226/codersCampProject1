@@ -7,47 +7,57 @@
         border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
         border-image-slice: 1;
     }
-    body .about .about-data{
+
+    body .about .about-data {
         border-right: none;
         border-bottom: 4px solid;
         border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
         border-image-slice: 1;
     }
-    body .skills .skills-html{
+
+    body .skills .skills-html {
         border-right: none;
         border-bottom: 4px solid;
         border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
         border-image-slice: 1;
     }
-    body .skills .skills-css{
+
+    body .skills .skills-css {
         border-right: none;
         border-bottom: 4px solid;
         border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
         border-image-slice: 1;
+    }
+
+    body .container .welcome h1 {
+        font-size: 20px
     }
 }
 
 body {
     font-family: Roboto, Helvetica, sans-serif;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(213,239,247,1) 50%, rgba(255,255,255,1) 100%);
-
-    /*  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-    /*test*/
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(213, 239, 247, 1) 50%, rgba(255, 255, 255, 1) 100%);
 }
 
 .welcome {
-    img {
-        position: relative;
+    position: relative;
+
+    .welcome-img {
+        display: block;
         width: 100%;
+        height: auto;
     }
 
-    .centered-text {
+    .welcome-title {
         position: absolute;
-        top: 200px;
-        color: rgb(255, 255, 255);
-        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
         width: 100%;
+        text-align: center;
     }
 }
 
@@ -56,12 +66,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    .about-img{
+
+    .about-img {
         border-right: 4px solid;
         border-image: linear-gradient(to bottom, rgb(0, 210, 255), rgb(58, 123, 213));
         border-image-slice: 1;
         border-bottom: none;
+
         img {
             display: block;
             margin: 10px;
@@ -70,33 +81,51 @@ body {
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            border: 1px solid rebeccapurple;
+            border: 1px solid rgb(0, 210, 255);
         }
     }
-    .about-data{
+
+    .about-data {
         border-right: 4px solid;
         border-image: linear-gradient(to bottom, rgb(0, 210, 255), rgb(58, 123, 213));
         border-image-slice: 1;
+    }
+
+    .about-text p {
+        padding: 5px;
     }
 }
 
 .skills {
     margin: 25px 0px;
-    .skills-html{
+
+    .skills-img {
+        transition: all 0.75s ease-in-out;
+
+        :hover {
+            transform: scale(0.85);
+        }
+    }
+
+    .skills-html {
+        border-right: 4px solid;
+        border-image: linear-gradient(to bottom, rgb(0, 210, 255), rgb(58, 123, 213));
+        border-image-slice: 1;
+
+    }
+
+    .skills-css {
         border-right: 4px solid;
         border-image: linear-gradient(to bottom, rgb(0, 210, 255), rgb(58, 123, 213));
         border-image-slice: 1;
     }
-    .skills-css{
-        border-right: 4px solid;
-        border-image: linear-gradient(to bottom, rgb(0, 210, 255), rgb(58, 123, 213));
-        border-image-slice: 1;
-    }
+
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
     p {
         text-align: center;
     }
@@ -104,12 +133,10 @@ body {
 
 .contact {
     margin: 25px 0px;
-    /*display: flex;
-    flex-wrap: wrap;*/
 }
 
-footer{
-    p{
-    text-align: center;
+footer {
+    p {
+        text-align: center;
     }
 }

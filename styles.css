@@ -32,6 +32,9 @@
        border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
     border-image-slice: 1;
   }
+  body .container .welcome h1 {
+    font-size: 20px;
+  }
 }
 
 body {
@@ -39,21 +42,27 @@ body {
   background: white;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, #d5eff7), to(white));
   background: linear-gradient(0deg, white 0%, #d5eff7 50%, white 100%);
-  /*  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-  /*test*/
 }
 
-.welcome img {
+.welcome {
   position: relative;
-  width: 100%;
 }
 
-.welcome .centered-text {
-  position: absolute;
-  top: 200px;
-  color: white;
-  text-align: center;
+.welcome .welcome-img {
+  display: block;
   width: 100%;
+  height: auto;
+}
+
+.welcome .welcome-title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .about {
@@ -86,7 +95,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 1px solid rebeccapurple;
+  border: 1px solid #00d2ff;
 }
 
 .about .about-data {
@@ -97,8 +106,22 @@ body {
   border-image-slice: 1;
 }
 
+.about .about-text p {
+  padding: 5px;
+}
+
 .skills {
   margin: 25px 0px;
+}
+
+.skills .skills-img {
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
+.skills .skills-img :hover {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
 }
 
 .skills .skills-html {
@@ -129,8 +152,6 @@ body {
 
 .contact {
   margin: 25px 0px;
-  /*display: flex;
-    flex-wrap: wrap;*/
 }
 
 footer p {
