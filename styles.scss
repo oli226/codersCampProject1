@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+@media screen and (max-width: 767px) {
+    body .about .about-img {
+        border-right: none;
+        border-bottom: 4px solid;
+        border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
+        border-image-slice: 1;
+    }
+
+    body .about .about-data {
+        border-right: none;
+        border-bottom: 4px solid;
+        border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
+        border-image-slice: 1;
+    }
+
+    body .skills .skills-html {
+        border-right: none;
+        border-bottom: 4px solid;
+        border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
+        border-image-slice: 1;
+    }
+
+    body .skills .skills-css {
+        border-right: none;
+        border-bottom: 4px solid;
+        border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
+        border-image-slice: 1;
+    }
+
+    body .container .welcome h1 {
+        font-size: 20px
+    }
+
+    body .about h4{
+        transform: rotate(0deg)
+    }
+
+    body .skills h4{
+        transform: rotate(0deg)
+    }
+}
+
+body {
+    font-family: 'Oxygen', Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(213, 239, 247, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+.welcome {
+    position: relative;
+
+    .welcome-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-family: 'Inconsolata', monospace;
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 20%;
+        height: auto;
+        width: auto;
+        text-align: center;
+    }
+}
+
+.about {
+    margin: 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h4{
+        transform: rotate(-90deg);
+        text-align: center;
+    }
+    .about-img {
+        border-right: 4px solid;
+        border-image: linear-gradient(to bottom, rgb(0, 210, 255), rgb(58, 123, 213));
+        border-image-slice: 1;
+        border-bottom: none;
+
+        img {
+            display: block;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid rgb(0, 210, 255);
+        }
+    }
+
+    .about-data {
+        padding: 4px;
+        border-right: 4px solid;
+        border-image: linear-gradient(to bottom, rgb(0, 210, 255), rgb(58, 123, 213));
+        border-image-slice: 1;
+        ul{
+            list-style-type: none;
+        }
+    }
+
+    .about-text p {
+        padding: 8px;
+    }
+}
+
+.skills {
+    margin: 25px 0px;
+    align-items: center;
+    justify-content: center;
+    h4{
+        transform: rotate(-90deg);
+        text-align: center;
+    }
+
+    .skills-img {
+        transition: all 0.75s ease-in-out;
+
+        :hover {
+            transform: scale(0.85);
+        }
+    }
+
+    .skills-html {
+        border-right: 4px solid;
+        border-image: linear-gradient(to bottom, rgb(0, 210, 255), rgb(58, 123, 213));
+        border-image-slice: 1;
+
+    }
+
+    .skills-css {
+        border-right: 4px solid;
+        border-image: linear-gradient(to bottom, rgb(0, 210, 255), rgb(58, 123, 213));
+        border-image-slice: 1;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.contact {
+    margin: 25px 0px;
+}
+
+footer {
+    p {
+        text-align: center;
+    }
+}
