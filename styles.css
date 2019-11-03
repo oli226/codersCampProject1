@@ -1,7 +1,45 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@media screen and (max-width: 767px) {
+  body .about .about-img {
+    border-right: none;
+    border-bottom: 4px solid;
+    -o-border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+       border-image: -webkit-gradient(linear, left top, right top, from(#00d2ff), to(#3a7bd5));
+       border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+    border-image-slice: 1;
+  }
+  body .about .about-data {
+    border-right: none;
+    border-bottom: 4px solid;
+    -o-border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+       border-image: -webkit-gradient(linear, left top, right top, from(#00d2ff), to(#3a7bd5));
+       border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+    border-image-slice: 1;
+  }
+  body .skills .skills-html {
+    border-right: none;
+    border-bottom: 4px solid;
+    -o-border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+       border-image: -webkit-gradient(linear, left top, right top, from(#00d2ff), to(#3a7bd5));
+       border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+    border-image-slice: 1;
+  }
+  body .skills .skills-css {
+    border-right: none;
+    border-bottom: 4px solid;
+    -o-border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+       border-image: -webkit-gradient(linear, left top, right top, from(#00d2ff), to(#3a7bd5));
+       border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+    border-image-slice: 1;
+  }
+}
+
 body {
   font-family: Roboto, Helvetica, sans-serif;
-  background-color: #92e0f694;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, #d5eff7), to(white));
+  background: linear-gradient(0deg, white 0%, #d5eff7 50%, white 100%);
+  /*  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
   /*test*/
 }
 
@@ -19,11 +57,6 @@ body {
 }
 
 .about {
-  border: 5px solid;
-  -o-border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
-     border-image: -webkit-gradient(linear, left top, right top, from(#00d2ff), to(#3a7bd5));
-     border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
-  border-image-slice: 1;
   margin: 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,17 +69,52 @@ body {
           justify-content: center;
 }
 
+.about .about-img {
+  border-right: 4px solid;
+  -o-border-image: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#00d2ff), to(#3a7bd5));
+     border-image: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+  border-image-slice: 1;
+  border-bottom: none;
+}
+
 .about .about-img img {
   display: block;
+  margin: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  border: 1px solid rebeccapurple;
+}
+
+.about .about-data {
+  border-right: 4px solid;
+  -o-border-image: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#00d2ff), to(#3a7bd5));
+     border-image: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+  border-image-slice: 1;
 }
 
 .skills {
   margin: 25px 0px;
+}
+
+.skills .skills-html {
+  border-right: 4px solid;
+  -o-border-image: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#00d2ff), to(#3a7bd5));
+     border-image: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+  border-image-slice: 1;
+}
+
+.skills .skills-css {
+  border-right: 4px solid;
+  -o-border-image: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#00d2ff), to(#3a7bd5));
+     border-image: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+  border-image-slice: 1;
 }
 
 .skills img {
