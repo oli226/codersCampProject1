@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
 @media screen and (max-width: 767px) {
   body .about .about-img {
     border-right: none;
@@ -35,10 +36,18 @@
   body .container .welcome h1 {
     font-size: 20px;
   }
+  body .about h4 {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  body .skills h4 {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 body {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: 'Oxygen', Helvetica, sans-serif;
   background: white;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, #d5eff7), to(white));
   background: linear-gradient(0deg, white 0%, #d5eff7 50%, white 100%);
@@ -54,14 +63,15 @@ body {
   height: auto;
 }
 
-.welcome .welcome-title {
+.welcome h1 {
+  font-family: 'Inconsolata', monospace;
   position: absolute;
-  top: 0;
+  top: 50%;
   bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  right: 20%;
+  height: auto;
+  width: auto;
   text-align: center;
 }
 
@@ -76,6 +86,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.about h4 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-align: center;
 }
 
 .about .about-img {
@@ -99,6 +115,7 @@ body {
 }
 
 .about .about-data {
+  padding: 4px;
   border-right: 4px solid;
   -o-border-image: linear-gradient(to bottom, #00d2ff, #3a7bd5);
      border-image: -webkit-gradient(linear, left top, left bottom, from(#00d2ff), to(#3a7bd5));
@@ -106,12 +123,28 @@ body {
   border-image-slice: 1;
 }
 
+.about .about-data ul {
+  list-style-type: none;
+}
+
 .about .about-text p {
-  padding: 5px;
+  padding: 8px;
 }
 
 .skills {
   margin: 25px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills h4 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-align: center;
 }
 
 .skills .skills-img {
